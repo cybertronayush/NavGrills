@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Navigus Assesment Ayush</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="{% static 'img/mdb-favicon.ico' %}" type="image/x-icon" />
+    <!-- Font Awesome -->
+  <!--   <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    /> -->
+    <!-- MDB -->
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <style></style>
+  </head>
+  <body>
+     {% include "quiz/navbar.html" %}
+    <header>
+      <div class="p-5 text-center bg-image" id="intro">
+          <img src="{% static 'img/intro.svg' %}" alt="meat" class="img-fluid" />
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">NavGrills</h1>
+              <h4 class="mb-3">The 100% engagement platform</h4>
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="/student/studentsignup"
+                role="button"
+                >Student</a
+              >
+              <a
+                class="btn btn-outline-light btn-lg m-2"
+                href="/teacher/teachersignup"
+                role="button"
+                >Teacher</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+    </header>
+    <main>
+      
+
+      <div class="container-fluid">
+        <section id="about" class="text-center text-white">
+          <h2 style="color:black;font-size: 25px;">Our Features:</h2>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 text-right">
+              <h2 style="color:black;font-size: 25px;">Basic Features</h2>
+              <p style="color:black;font-size: 18px;">
+              A teacher is supposed to add, remove, edit, and delete courses. For each course, they
+will be able to create one quiz only, based on a set of questions and their respective
+answers (Choice-based Questions only).
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img src="{% static 'img/1.svg' %}" alt="meat" class="img-fluid" />
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 text-right">
+              <h2 style="color:black;font-size: 25px;">Intermediate Features</h2>
+              <p style="color:black;font-size: 18px;">
+                A quiz can contain multiple questions, and each question may have multiple correct
+answers. The teacher must set the points (positive integer with max value 10) for each
+question that the student must receive by answering the question correctly.
+
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img src="{% static 'img/2.svg' %}" alt="meat" class="img-fluid" />
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 text-right">
+              <h2 style="color:black;font-size: 25px;">Advance Features</h2>
+              <p style="color:black;font-size: 18px;">
+               Recording points scored by the students in a particular course.
+b. Student Profile which shows the history of course quizzes taken and total
+points earned for all courses quizzes and each course quiz separately.
+c. Each answer needs to have sub-answers (segmented by topics).
+
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img src="{% static 'img/3.svg' %}" alt="meat" class="img-fluid" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="book">
+        <!-- Background image -->
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-dark">
+            <a class="btn btn-outline-dark btn-lg m-2" href="#!" role="button"
+              >Create A Quiz</a
+            >
+          </div>
+        </div>
+
+        <!-- Background image -->
+      </section>
+      
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2);"
+        >
+          
+        
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </footer>
+  </body>
+
+  <!-- MDB -->
+
+</html>
