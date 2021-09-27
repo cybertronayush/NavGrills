@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-
+import django_heroku
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
@@ -130,7 +130,6 @@ STATICFILES_DIRS=[
 STATIC_DIR,
  ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
 LOGIN_REDIRECT_URL='/afterlogin'
 
 #for contact us give your gmail id and password
@@ -146,3 +145,6 @@ EMAIL_HOST_PASSWORD = 'xyz' # host email password required
 # otherwise you will get SMTPAuthenticationError at /contactus
 # this process is required because google blocks apps authentication by default
 EMAIL_RECEIVING_USER = ['to@gmail.com'] # email on which you will receive messages sent from website
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
