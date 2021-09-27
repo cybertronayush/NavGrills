@@ -7,7 +7,7 @@ In the this assignment, we are going to build an adaptive learning platform, lev
 ![Landing_page](/src/img1.PNG)
 ![Popular_page](/src/img2.PNG)
 
-## HOW TO RUN THIS PROJECT
+## HOW TO RUN THIS PROJECT LOCALLY
 - Install Python(3.8) (Dont Forget to Tick Add to Path while installing Python)
 - Open Terminal and Execute Following Commands :
 ```
